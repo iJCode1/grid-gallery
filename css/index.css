@@ -3,9 +3,10 @@
 :root {
   --white: hsl(0, 0%, 100%); 
   --black: #111111; 
+  --blue: #00A2FF;
   --body1-regular: 400 1rem/1.5rem Poppins; 
   --body1-bold: 700 1rem/1.5rem Poppins;  
-  --linear: 135deg, #0000002f 0%, #00000035 100%;
+  --linear: 135deg, #0000002f 0%, #3d3c3c31 100%;
   }
   
   body {
