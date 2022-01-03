@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import './card.css';
 :root {
   --white: hsl(0, 0%, 100%); 
   --black: #111111; 
   --body1-regular: 400 1rem/1.5rem Poppins; 
   --body1-bold: 700 1rem/1.5rem Poppins;  
+  --linear: 135deg, #0000002f 0%, #00000035 100%;
   }
   
   body {
     color: var(--white);
-    background-color: var(--black);
+    /* background-color: var(--black); */
     font: var(--body1-regular);
     margin: 0;
   }

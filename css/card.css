@@ -1,0 +1,116 @@
+.cards{
+  display: grid;
+  gap: 1rem;
+  /* grid-auto-flow: column; */
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: 26.83px;
+  max-inline-size: 85.375rem;
+  margin: 0 auto;
+  min-block-size: 100vh;
+
+  padding-inline-end: 1rem;
+  padding-inline-start: 1rem;
+  padding-block-end: 1rem;
+  padding-block-start: 1rem;
+}
+.card{
+  background-size: cover;
+  background-position: center;
+  inline-size: 100%;
+  block-size: 100%;
+  grid-column-end: span 6;
+  grid-row-end: span 4;
+  position: relative;
+  border-radius: .5rem;
+}
+.card:hover{
+  opacity: .8;
+}
+.card.is-medium{
+  grid-row-end: span 5;
+}
+.card-details{
+  position: absolute;
+  inset-block-end: 0;
+  inset-inline-start: 0;
+  padding-inline-end: 1rem;
+  padding-inline-start: 1rem;
+  padding-block-end: .5rem;
+  padding-block-start: 1rem;
+}
+.card-capital{
+  font: var(--body1-bold);
+  margin: 0;
+}
+.card-country{
+  font: var(--body1-regular);
+  margin: 0;
+}
+.card.card-ale{
+  background-image: linear-gradient(var(--linear)), url('../assets/img/berlin.webp');
+}
+.card.card-arg{
+  background-image: linear-gradient(var(--linear)), url('../assets/img/buenos-aires.webp');
+}
+.card.card-chin{
+  background-image: linear-gradient(var(--linear)), url('../assets/img/pekin.webp');
+}
+.card.card-cor{
+  background-image: linear-gradient(var(--linear)), url('../assets/img/seul.webp');
+}
+.card.card-ecu{
+  background-image: linear-gradient(var(--linear)), url('../assets/img/quito.webp');
+}
+.card.card-esp{
+  background-image: linear-gradient(var(--linear)), url('../assets/img/madrid.webp');
+}
+.card.card-alb{
+  background-image: linear-gradient(var(--linear)), url('../assets/img/tirana.webp');
+}
+.card.card-chil{
+  background-image: linear-gradient(var(--linear)), url('../assets/img/santiago.webp');
+}
+.card.card-col{
+  background-image: linear-gradient(var(--linear)), url('../assets/img/bogotá.webp');
+}
+.card.card-cub{
+  background-image: linear-gradient(var(--linear)), url('../assets/img/la-habana.webp');
+}
+.card.card-sal{
+  background-image: linear-gradient(var(--linear)), url('../assets/img/san-salvador.webp');
+}
+.card.card-mex{
+  background-image: linear-gradient(var(--linear)), url('../assets/img/mexico.webp');
+}
+@media screen and (min-width: 768px){
+  .card{
+    grid-column-end: span 4;
+  }
+  .card.is-small{
+    grid-row-end: span 8;
+  }
+  .card.is-medium{
+    grid-row-end: span 10;
+  }
+  .card.is-large{
+    grid-row-end: span 12;
+  }
+}
+@media screen and (min-width: 1024px){
+  .cards{
+    padding-block-end: 2.5rem;
+    padding-block-start: 2.5rem;
+  }
+  .card{
+    grid-column-end: span 4;
+  }
+  .card.is-small{
+    grid-row-end: span 10;
+  }
+  .card.is-medium{
+    grid-row-end: span 12;
+  }
+  .card.is-large{
+    grid-row-end: span 16;
+  }
+}
